@@ -16,24 +16,44 @@
 </head>
 
 <body>
-
 	<div id="mainDiv">
 		<div id="content">
-			
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* 今天是平平的生日,我给平平献唱一首</span><br />
-				
+				<span class="space"/><span class="comments">* We met on September 9 th and fell in love after some time,</span><br />
+				<span class="space"/><span class="comments">* so I write some code to record  our in love.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-			<video width="300" height="160" controls="controls">
-  				<source src="source/birthday.mp4" type="video/mp4" />
-			</video>
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"mianmian"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"pingping"</span>);<br />
+				<span class="comments">// Oct 1, 2020, When we met at the cinema and I showed my heart. </span><br />
+				i.like(u);<br />
+				<span class="comments">// Luckily, Gradually you became my girlfriend.</span><br />
+				u.accepted();<br />
+				<span class="comments">// Since then, I miss u every day.</span><br />
+				i.miss(u);<br />
+				<span class="comments">// And take care of u and our love.</span><br />
+				i.takeCareOf(u);<br />
+				<span class="comments">// You said you were always weird.</span><br />
+				<span class="comments">// Don't want to talk to me.</span><br />
+				<span class="comments">// Don't want to get married.</span><br />
+				<span class="comments">// ...</span><br />
+				<span class="comments">// So I will wait and take good care of you.</span><br />
+				<span class="keyword">boolean</span> isContinuous = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (isContinuous) {<br />
+				<span class="placeholder"/>i.waitFor(u);<br />
+				<span class="placeholder"/><span class="comments">// I think we'll have a perfect result</span><br />
+				<span class="placeholder"/><span class="comments">// and you should think so too.</span><br />
+				<span class="placeholder"/>isContinuous = u.thinkOver();<br />
+				}<br />
+				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
+				i.marry(u);<br />
+				i.liveHappilyWith(u);<br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						生 日 快 乐
+						Liyiping, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
@@ -51,7 +71,7 @@
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(1992, 8, 5);
+		together.setFullYear(2020, 9, 9);
 		together.setHours(21);
 		together.setMinutes(14);
 		together.setSeconds(0);
